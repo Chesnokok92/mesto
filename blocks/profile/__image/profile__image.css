@@ -1,0 +1,9 @@
+.profile__image {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    border-radius: 50%;
+    min-width: 127.5px;
+    min-width: 127.5px;
+    object-fit: cover;
+}

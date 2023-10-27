@@ -1,0 +1,15 @@
+.elements__like{
+    display: flex;
+    padding: 0;
+    margin-right: 0;
+    justify-self: flex-end;
+    background-color: #fff;
+    border: none;
+    background-image: url(../../../images/like.svg);
+    background-repeat: no-repeat;
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 19px;
+    max-height: 19px;
+
+}
