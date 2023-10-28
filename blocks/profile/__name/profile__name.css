@@ -7,3 +7,10 @@
     font-weight: 500;
     line-height: 48px;
 }
+
+@media screen and (max-width: 767px) {
+    .profile__name {
+        text-align: center;
+        font-size: 27px;
+    }
+}

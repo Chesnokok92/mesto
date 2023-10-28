@@ -13,3 +13,12 @@
     font-weight: 400;
     line-height: normal;
 }
+
+
+@media screen and (max-width: 767px) {
+    .footer {
+        max-width: 282px;
+        margin-top: 48px;
+        font-size: 14px;
+    }
+}
