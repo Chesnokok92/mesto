@@ -11,6 +11,18 @@
     grid-column-gap: 17px;
     max-width: 882px;
 }
+
+
+@media screen and (max-width: 1023px) {
+    .elements {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        max-width: 768px;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
     .elements {
         max-width: 282px;

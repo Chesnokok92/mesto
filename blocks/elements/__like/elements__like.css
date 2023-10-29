@@ -1,4 +1,4 @@
-.elements__like{
+.elements__like {
     display: flex;
     padding: 0;
     margin-left: auto;
@@ -11,4 +11,10 @@
     max-width: 22px;
     min-height: 19px;
     max-height: 19px;
+}
+
+.elements__like:hover {
+    fill: #000;
+    opacity: 0.5;
+    cursor: pointer;
 }
