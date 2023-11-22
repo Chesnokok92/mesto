@@ -1,18 +1,17 @@
-.profile__about {
+.footer__text{
+    display: flex;
     margin: 0;
     padding: 0;
+    color: #545454;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    max-width: 336px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    max-width: 282px;
 }
 
 @media screen and (max-width: 767px) {
-    .profile__about {
+    .footer__text {
         font-size: 14px;
     }
 }
