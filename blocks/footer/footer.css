@@ -7,6 +7,11 @@
     margin-right: auto;
     padding-bottom: 60px;
     max-width: 880px;
+    color: #545454;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 @media screen and (max-width: 1023px) {
@@ -19,5 +24,6 @@
     .footer {
         max-width: 282px;
         margin-top: 48px;
+        font-size: 14px;
     }
 }

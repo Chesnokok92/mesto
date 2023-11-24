@@ -29,55 +29,24 @@
             <button type="submit" class="profile__button-add" id="pictureAdd"></button>
         </section>
         <section class="elements">
-            <div class="elements__element">
-                <img class="elements__photo" src="./images/kirill-pershin.jpeg" alt="Карачаевск">
-                <div class="elements__info">
-                    <h2 class="elements__text">Карачаевск</h2>
-                    <button type="submit" class="elements__like"></button>
-                </div>
-            </div>
-            <div class="elements__element">
-                <img class="elements__photo" src="./images/elbrus.jpeg" alt="Гора Эльбрус">
-                <div class="elements__info">
-                    <h2 class="elements__text">Гора Эльбрус</h2>
-                    <button type="submit" class="elements__like"></button>
-                </div>
-            </div>
-            <div class="elements__element">
-                <img class="elements__photo" src="./images/dombai.jpeg" alt="Домбай">
-                <div class="elements__info">
-                    <h2 class="elements__text">Домбай</h2>
-                    <button type="submit" class="elements__like"></button>
-                </div>
-            </div>
-            <div class="elements__element">
-                <img class="elements__photo" src="./images/elbrus.jpeg" alt="Гора Эльбрус">
-                <div class="elements__info">
-                    <h2 class="elements__text">Гора Эльбрус</h2>
-                    <button type="submit" class="elements__like"></button>
-                </div>
-            </div>
-            <div class="elements__element">
-                <img class="elements__photo" src="./images/dombai.jpeg" alt="Домбай">
-                <div class="elements__info">
-                    <h2 class="elements__text">Домбай</h2>
-                    <button type="submit" class="elements__like"></button>
-                </div>
-            </div>
-            <div class="elements__element">
-                <img class="elements__photo" src="./images/kirill-pershin.jpeg" alt="Карачаево-Черкессия">
-                <div class="elements__info">
-                    <h2 class="elements__text">Карачаево-Черкессия</h2>
-                    <button type="submit" class="elements__like"></button>
-                </div>
-            </div>
+            <template id="card__template">
+                <article class="elements__element">
+                    <button class="elements__thrash" type="submit"></button>
+                    <img class="elements__photo" alt=" Фото" onclick="openfullpicture()" />
+                    <div class="elements__info">
+                        <h2 class="elements__text"></h2>
+                        <button class="elements__like" type="submit">
+                        </button>
+                    </div>
+                </article>
+            </template>
         </section>
     </main>
     <footer class="footer">
         <p class="footer__text"> &#169; 2023 Mesto Russia</p>
     </footer>
     <section class="pop-up__all">
-        <form class="pop-up"> <!--pop-up_hide Для скрытия Pop-UP окна-->
+        <form class="pop-up">
             <div class="pop-up__form">
                 <button type="submit" class="pop-up__button-close"></button>
                 <h3 class="pop-up__edit">Редактировать профиль</h3>
@@ -89,16 +58,37 @@
         </form>
     </section>
     <section class="pop-up__all" id="pictureAddPop">
-        <form class="pop-up"> <!--pop-up_hide Для скрытия Pop-UP окна-->
+        <form class="pop-up">
             <div class="pop-up__form">
                 <button type="submit" class="pop-up__button-close"></button>
                 <h3 class="pop-up__edit">Новое место</h3>
-                <input type="text" class="pop-up__input pop-up_name" id="inputTitle" placeholder="Название" value="Название" />
-                <input type="text" class="pop-up__input pop-up_info" id="inputLinkPicture" placeholder="Ссылка на картинку"
-                    value="Ссылка на картинку" />
-                <button type="submit" class="pop-up__button-edit">Сохранить</button>
+                <input type="text" class="pop-up__input pop-up_name" id="inputTitle" placeholder="Название"
+                    value="Название" />
+                <input type="text" class="pop-up__input pop-up_info" id="inputLinkPicture"
+                    placeholder="Ссылка на картинку" value="Ссылка на картинку" />
+                <button type="submit" class="pop-up__button-edit" id="newPicture">Сохранить</button>
             </div>
         </form>
     </section>
+    <section class="pop-up__all" id="pictureFull">
+        <form class="pop-up__picture">
+            <div class="pop-up__fullpicture" id="picF">
+                <div class="pop-up__picOpen" id="picO">
+                </div>
+                <button type="submit" class="pop-up__button-close"></button>
+            </div>
+        </form>
+    </section>
+    <template id="card__template">
+        <article class="elements__element">
+            <button class="elements__thrash" type="submit"></button>
+            <img class="elements__photo" alt=" Фото" />
+            <div class="elements__info">
+                <h2 class="elements__text"></h2>
+                <button class="elements__like" type="submit">
+                </button>
+            </div>
+        </article>
+    </template>
     <script src="/scripts/scrypt.js"></script>
 </body>

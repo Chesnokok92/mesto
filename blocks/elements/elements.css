@@ -1,5 +1,6 @@
 .elements {
     display: grid;
+    position: relative;
     margin: 0;
     margin-top: 51px;
     margin-left: auto;
