@@ -1,11 +1,14 @@
-.elements__photo{
+.elements__button {
     display: flex;
     margin: 0;
     padding: 0;
-    object-fit: cover;
     width: 282px;
     height: 282px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    opacity: 1;
+    border: none;
+}
+
+.elements__button:hover {
+    cursor: pointer;
 }
